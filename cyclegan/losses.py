@@ -1,8 +1,8 @@
 '''
 Loss functions for CycleGan
 '''
-import keras.backend as k
-from keras.losses import mean_squared_error
+from tensorflow.python.keras import backend as k
+from tensorflow.python.keras.losses import mean_squared_error
 
 _disc_train_thresh = 0.0
 

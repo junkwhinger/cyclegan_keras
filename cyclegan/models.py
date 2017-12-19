@@ -1,10 +1,10 @@
 '''
 source for models
 '''
-from keras.layers import Conv2D, UpSampling2D, Input, Activation, GlobalAveragePooling2D
-from keras.layers.advanced_activations import LeakyReLU
-from keras.layers.merge import Add
-from keras.models import Model
+from tensorflow.python.keras.layers import Conv2D, UpSampling2D, Input, Activation, GlobalAveragePooling2D
+from tensorflow.python.keras.layers import LeakyReLU
+from tensorflow.python.keras.layers import Add
+from tensorflow.python.keras.models import Model
 
 from .instance_norm import InstanceNormalization
 

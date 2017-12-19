@@ -4,12 +4,12 @@ Test cyclegan using MNIST
 import json
 import os
 
-import keras.backend as k
+from tensorflow.python.keras import backend as k
 import numpy as np
-from keras.datasets import cifar10, mnist
-from keras.layers import Input
-from keras.models import Model
-from keras.optimizers import Adam
+from tensorflow.python.keras.datasets import cifar10, mnist
+from tensorflow.python.keras.layers import Input
+from tensorflow.python.keras.models import Model
+from tensorflow.python.keras.optimizers import Adam
 from PIL import Image
 
 import context

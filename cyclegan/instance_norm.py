@@ -13,13 +13,16 @@ Developed with help from:
 written by shadySource
 
 '''
-from keras.engine.topology import Layer
-import keras.backend as k
+# from tensorflow.python.keras.engine.topology import Layer
+from tensorflow.python.keras.layers import Layer
+from tensorflow.python.keras import backend as k
+import tensorflow as tf
+from tensorflow.python.keras import initializers
 
 class InstanceNormalization(Layer):
     def __init__(self,
-                 beta_initializer='zeros',
-                 gamma_initializer='ones',
+                 beta_initializer=None,
+                 gamma_initializer=None,
                  epsilon=1e-3,
                  **kwargs):
         super(InstanceNormalization, self).__init__(**kwargs)
